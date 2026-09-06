@@ -1,0 +1,321 @@
+def mostrar_menu(): 
+        print("MENÚ DE PELÍCULA CUEVANA 3")#Aqui ponemos el nombre de la pagina pirata 
+        print("1. Buscador de películas") 
+        print("2. Ver todas las películas") 
+        print("3. Filtración por género") 
+        print("4. Filtración por edades") 
+        return input("Seleccione una opcion:") 
+
+opcion = mostrar_menu() 
+
+if opcion == "3": #aqui pongo las opciones de filtracion por genero pueden cambiarlo por elif si quieren poner mas opciones 
+        print("Escoja un género:") 
+        print("1.TERROR") 
+        print("2.COMEDIA") 
+        print("3.SUSPENSO") 
+        print("4.ROMANCE") 
+        print("5.ACCIÓN")            
+        genero = input("Seleccione un género:") 
+
+        if genero == "1": 
+                print("Películas de terror (DISPONIBLES):") 
+                print( 
+                        "El Exorcista (1973)\n" 
+                        "El Resplandor (1980)\n" 
+                        "Pesadilla en Elm Street (1984)\n" 
+                        "Scream (1996)\n" 
+                        "Saw (2004)\n" 
+                    ) 
+                peliculas=int(input("Seleccione una película para ver(1-5):")) 
+ 
+                while peliculas < 1 or peliculas > 5: 
+                    print("Opción inválida. Por favor, seleccione un número del 1 al 5") 
+                    peliculas=int(input("Seleccione una película para ver(1-5):")) 
+
+                if peliculas == 1: 
+                    print("El Exorcista (1973):\n" 
+                        "Una niña de 12 años es poseída por un demonio, y su madre busca la ayuda de dos sacerdotes para exorcizarla. La película explora temas de fe, miedo y el poder del mal.") 
+
+                elif peliculas == 2: 
+                    print("El Resplandor (1980):\n" 
+                        "Un escritor se convierte en el cuidador de un hotel aislado durante el invierno, donde fuerzas sobrenaturales lo llevan a la locura. La película es un estudio del aislamiento y la obsesión.") 
+
+                elif peliculas == 3: 
+                    print("Pesadilla en Elm Street (1984):\n" 
+                        "Un grupo de adolescentes es acosado por un asesino que los ataca en sus sueños, lo que provoca que mueran en la vida real. La película combina elementos de terror y fantasía, explorando el miedo a lo desconocido.") 
+
+                elif peliculas == 4: 
+                    print("Scream (1996):\n" 
+                        "Una serie de asesinatos en una pequeña ciudad es perpetrada por un asesino enmascarado que sigue las reglas de las películas de terror. La película es conocida por su mezcla de terror y comedia, así como por su metacomentario sobre el género.") 
+
+                elif peliculas == 5: 
+                    print("Saw (2004):\n" 
+                        "Dos hombres se despiertan encadenados en un baño, y deben seguir las instrucciones de un asesino en serie para sobrevivir. La película es conocida por sus giros inesperados y su enfoque en la moralidad y la justicia.")            
+             
+                print("Películas de comedia (DISPONIBLES):") 
+                print(  "Mi Pobre Angelito (1990)\n" 
+                        "La Máscara (1994)\n" 
+                        "Scary Movie (2000)\n" 
+                        "Shrek (2001)\n" 
+                        "¿Qué pasó ayer? (2009)\n" 
+                        ) 
+
+        elif genero == "2": 
+                print("Películas de Comedia (DISPONIBLES):")
+                print("Mi Pobre Angelito (1990)")
+                print("La Máscara (1994)")
+                print("Scary Movie (2000)")
+                print("Shrek (2001)")
+                print("¿Qué pasó ayer? (2009)")
+                peliculas=int(input("Seleccione una película para ver(1-5):")) 
+
+                while peliculas < 1 or peliculas > 5: 
+                    print("Opción inválida. Por favor, seleccione un número del 1 al 5") 
+                    peliculas=int(input("Seleccione una película para ver(1-5):")) 
+
+                if peliculas == 1: 
+                    print("Mi Pobre Angelito (1990):\n" 
+                        "Un niño de ocho años es olvidado por su familia durante las vacaciones de Navidad y debe defender su hogar de dos ladrones torpes. La película combina comedia y aventura, explorando temas de ingenio y valentía.") 
+
+                elif peliculas == 2: 
+                    print("La Máscara (1994):\n" 
+                        "Un hombre tímido encuentra una máscara mágica que le otorga poderes sobrenaturales y lo transforma en un personaje extravagante y carismático. La película combina comedia, acción y romance, explorando temas de identidad y autoexpresión.") 
+
+                elif peliculas == 3: 
+                    print("Scary Movie (2000):\n" 
+                        "Una parodia de las películas de terror populares, donde un grupo de adolescentes se enfrenta a situaciones absurdas y cómicas mientras intentan sobrevivir a un asesino enmascarado. La película combina comedia y sátira, explorando el género del terror desde una perspectiva humorística.") 
+
+                elif peliculas == 4: 
+                    print("Shrek (2001):\n" 
+                        "Un ogro llamado Shrek vive en un pantano y se ve obligado a salvar a una princesa de un dragón. La película combina comedia y fantasía, explorando temas de amistad y aceptación.") 
+
+                elif peliculas == 5: 
+                    print("¿Qué pasó ayer? (2009):\n" 
+                        "Un grupo de amigos se reúne para recordar los eventos de su adolescencia, pero descubren que sus recuerdos no son exactos. La película combina comedia y drama, explorando temas de amistad y memoria.") 
+
+        elif genero == "3":
+                print("Películas de suspenso (DISPONIBLES):")
+                print("SEVEN (1995)")
+                print("El juego (1997)")
+                print("El sexto sentido (1999)")
+                print("El coleccionista de huesos (1999)")
+                print("Los otros (2001)")
+                peliculas=int(input("Seleccione una película para ver(1-5):")) 
+
+                while peliculas < 1 or peliculas > 5: 
+                    print("Opción inválida. Por favor, seleccione un número del 1 al 5") 
+                    peliculas=int(input("Seleccione una película para ver(1-5):")) 
+
+                if peliculas == 1: 
+                     print("SEVEN (1995):\n" 
+                        "Un detective investiga una serie de asesinatos, mientras descubre un misterioso asesino serial. La película combina suspense y drama, explorando temas de justicia y corrupción.") 
+
+                elif peliculas == 2: 
+                     print("El juego (1997):\n" 
+                        "Un hombre de negocios recibe un regalo misterioso que lo involucra en un juego peligroso y psicológico. La película combina suspense y misterio, explorando temas de control y manipulación.") 
+
+                elif peliculas == 3: 
+                     print("El sexto sentido (1999):\n" 
+                        "Un niño que puede ver y comunicarse con los muertos busca la ayuda de un psicólogo para entender sus habilidades. La película combina suspense y drama, explorando temas de trauma y redención.") 
+
+                elif peliculas == 4: 
+                     print("El coleccionista de huesos (1999):\n" 
+                        "Un detective y una estudiante de medicina trabajan juntos para atrapar a un asesino en serie que deja pistas macabras. La película combina suspense y misterio, explorando temas de obsesión y justicia.") 
+
+                elif peliculas == 5:   
+                      print("Los otros (2001):\n" 
+                        "Un grupo de amigos se reúne para recordar los eventos de su adolescencia, pero descubren que sus recuerdos no son exactos. La película combina comedia y drama, explorando temas de amistad y memoria.")
+        elif genero == "4":
+                print("Películas de romance (DISPONIBLES):")
+                print("Titanic (1997)")
+                print("10 cosas que odio de ti (1999)")
+                print("Diario de una pasión (2004)")
+                print("Orgullo y prejuicio (2005)")
+                print("Siempre el mismo día (2011)")
+                peliculas=int(input("Seleccione una película para ver(1-5):"))
+
+                while peliculas < 1 or peliculas > 5:
+                    print("Opción inválida. Por favor, seleccione un número del 1 al 5")
+                    peliculas=int(input("Seleccione una película para ver(1-5):"))
+
+                if peliculas == 1:
+                    print("Titanic (1997):\n"
+                        "Una historia de amor entre un joven artista y una mujer de clase alta a bordo del famoso transatlántico que se hunde. La película combina romance y drama, explorando temas de amor, sacrificio y tragedia.")
+                elif peliculas == 2:
+                    print("10 cosas que odio de ti (1999):\n"
+                        "Una comedia romántica basada en la obra de Shakespeare 'La fierecilla domada', donde un joven intenta conquistar a una chica difícil. La película combina romance y comedia, explorando temas de amor adolescente y relaciones.")
+                elif peliculas == 3:
+                    print("Diario de una pasión (2004):\n"
+                        "Una historia de amor que abarca décadas, donde un hombre lee a una mujer enferma un diario que narra su relación. La película combina romance y drama, explorando temas de amor eterno y memoria.")
+                elif peliculas == 4:
+                    print("Orgullo y prejuicio (2005):\n"
+                        "Una adaptación de la novela de Jane Austen, donde una joven enfrenta los desafíos del amor y la sociedad en la Inglaterra del siglo XIX. La película combina romance y drama, explorando temas de orgullo, prejuicio y matrimonio.")
+                elif peliculas == 5:
+                    print("Siempre el mismo día (2011):\n"
+                        "Una historia de amor que sigue a dos amigos a lo largo de 20 años, mostrando cómo sus vidas y relaciones cambian con el tiempo. La película combina romance y drama, explorando temas de amistad, amor y destino.")         
+        elif genero == "5":
+                print("Películas de acción (DISPONIBLES):")
+                print("Duro de Matar (1988)")
+                print("Terminator 2: El Juicio Final (1991)")
+                print("Misión: Imposible (1996)")
+                print("Gladiador (2000)")
+                print("Batman: El Caballero de la Noche (2008)")
+                peliculas=int(input("Seleccione una película para ver(1-5):"))
+
+                while peliculas < 1 or peliculas > 5:
+                    print("Opción inválida. Por favor, seleccione un número del 1 al 5")
+                    peliculas=int(input("Seleccione una película para ver(1-5):"))
+
+                if peliculas == 1:
+                    print("Duro de Matar (1988):\n"
+                        "Un policía de Nueva York debe enfrentarse a un grupo de terroristas que han tomado un rascacielos durante la Navidad. La película combina acción y suspenso, explorando temas de heroísmo y valentía.")
+
+                elif peliculas == 2:
+                    print("Terminator 2: El Juicio Final (1991):\n"
+                        "Un cyborg del futuro es enviado para proteger a un joven que será clave en la lucha contra las máquinas. La película combina acción y ciencia ficción, explorando temas de destino y humanidad.")
+
+                elif peliculas == 3: 
+                    print("Misión: Imposible (1996):\n"
+                        "Un agente secreto debe recuperar una lista de agentes encubiertos que ha sido robada, enfrentándose a traiciones y peligros. La película combina acción y espionaje, explorando temas de lealtad y engaño.")
+
+                elif peliculas == 4:
+                    print("Gladiador (2000):\n"
+                        "Un general romano es traicionado y reducido a esclavitud, buscando venganza en la arena del Coliseo. La película combina acción y drama, explorando temas de honor, justicia y redención.")
+                elif peliculas == 5:
+                    print("Batman: El Caballero de la Noche (2008):\n"
+                        "Batman enfrenta al Joker, un criminal psicópata que amenaza con destruir Gotham City. La película combina acción y drama, explorando temas de justicia, corrupción y redención.")
+        else:
+                print("Opción inválida. Por favor, seleccione un número del 1 al 5")  
+elif opcion == "2":
+    print("------ CATALOGO DE PELICULAS ------") 
+    print("1. El Exorcista") 
+    print("2. El Resplandor") 
+    print("3. Pesadilla en Elm Street") 
+    print("4. Scream") 
+    print("5. Saw") 
+    print("6. Mi Pobre Angelito") 
+    print("7. La Máscara") 
+    print("8. Scary Movie") 
+    print("9. Shrek") 
+    print("10. ¿Qué pasó ayer?") 
+    print("11. Seven") 
+    print("12. El Juego") 
+    print("13. El Sexto Sentido") 
+    print("14. El Coleccionista de Huesos") 
+    print("15. El Menú") 
+    print("16. Titanic")   
+    print("17. 10 Cosas que Odio de Ti") 
+    print("18. Diario de una Pasión") 
+    print("19. Orgullo y Prejuicio") 
+    print("20. Siempre el Mismo Día") 
+    print("21. Duro de Matar") 
+    print("22. Terminator 2: El Juicio Final") 
+    print("23. Misión: Imposible") 
+    print("24. Gladiador") 
+    print("25. Batman: El Caballero de la Noche") 
+
+    peliculas = int(input("Seleccione el número de la película que desea ver: "))   
+    while peliculas < 1 or peliculas > 25:
+        print("Opción inválida. Por favor, seleccione un número del 1 al 25")
+        peliculas = int(input("Seleccione una película (1-25): "))
+
+    if peliculas == 1:
+        print("El Exorcista:")
+        print("Una niña de 12 años es poseída por un demonio, y su madre busca la ayuda de dos sacerdotes para exorcizarla. La película explora temas de fe, miedo y el poder del mal.")
+
+    elif peliculas == 2:
+        print("El Resplandor:")
+        print("Un hombre se muda a un hotel aislado donde se enfrenta a sus traumas y a una presencia sobrenatural. La película explora temas de aislamiento, locura y el poder del miedo.")
+
+    elif peliculas == 3:
+        print("Pesadilla en Elm Street:")
+        print("Un joven es perseguido por un asesino enmascarado que aparece en sus sueños. La película explora temas de miedo, paranoia y la línea entre realidad y pesadilla.")
+
+    elif peliculas == 4:
+        print("Scream:")
+        print("Un asesino enmascarado aterroriza a un grupo de adolescentes, mientras se revelan secretos y traiciones. La película combina terror y comedia, explorando temas de miedo y supervivencia.")
+
+    elif peliculas == 5:
+        print("Saw:")
+        print("Dos hombres se despiertan encadenados en un baño, y deben seguir las instrucciones de un asesino en serie para sobrevivir. La película es conocida por sus giros inesperados y su enfoque en la moralidad y la justicia.")
+
+    elif peliculas == 6:
+        print("Mi Pobre Angelito:")
+        print("Una historia de amor que involucra a un joven y una joven que se enfrentan a los desafíos del mundo. La película explora temas de sacrificio, amor y redención.")
+
+    elif peliculas == 7:
+        print("La Máscara:")
+        print("Un hombre disfrazado de máscara se convierte en un héroe para proteger su ciudad. La película combina acción y comedia, explorando temas de justicia y responsabilidad.")
+
+    elif peliculas == 8:
+        print("Scary Movie:")
+        print("Una parodia del género del terror, que satiriza las películas de miedo más populares. La película combina humor y elementos de terror.")
+
+    elif peliculas == 9:
+        print("Shrek:")
+        print("Un ogro se convierte en un héroe para salvar a una princesa. La película combina animación y comedia, explorando temas de amistad y aceptación.")
+
+    elif peliculas == 10:
+        print("¿Qué pasó ayer?")
+        print("Un grupo de amigos se ve envuelto en una serie de eventos cómicos después de un incidente. La película explora temas de amistad y la importancia de los momentos compartidos.")
+
+    elif peliculas  == 11:
+        print("Seven:")
+        print("Dos detectives investigan una serie de asesinatos que siguen los siete pecados capitales. La película combina suspenso y misterio, explorando temas de moralidad y justicia.")   
+
+    elif peliculas == 12:
+        print("El Juego:")
+        print("Un juego de azar determina el destino de un grupo de personas. La película explora temas de suerte, destino y la naturaleza del juego.")
+
+    elif peliculas == 13:
+        print("El Sexto Sentido:")
+        print("Un niño con la habilidad de ver fantasmas se ve obligado a enfrentar una amenaza que lo persigue. La película explora temas de percepción, miedo y la línea entre lo real y lo sobrenatural.")
+
+    elif peliculas == 14:
+        print("El Coleccionista de Huesos:")
+        print("Un hombre se obsesiona con recopilar huesos humanos y se convierte en un asesino en serie. La película combina suspenso y psicología, explorando temas de obsesión y violencia.")
+
+    elif peliculas == 15:
+        print("El Menú:")
+        print("Un grupo de clientes se encuentra atrapado en un restaurante donde son sometidos a una experiencia inquietante. La película combina terror y comedia, explorando temas de clase social y el poder del miedo.")
+
+    elif peliculas == 16:
+        print("Titanic:")
+        print("Una historia de amor que se desarrolla a bordo del RMS Titanic. La película explora temas de sacrificio, amor y tragedia.")
+
+    elif peliculas == 17:
+        print("10 Cosas que Odio de Ti:")
+        print("Una comedia romántica basada en la obra de Shakespeare 'La fierecilla domada', donde un joven intenta conquistar a una chica difícil. La película combina romance y comedia, explorando temas de amor adolescente y relaciones.")    
+
+    elif peliculas  == 18:
+        print("Diario de una Pasión:")
+        print("Una historia de amor que abarca décadas, donde un hombre lee a una mujer enferma un diario que narra su relación. La película combina romance y drama, explorando temas de amor eterno y memoria.")
+
+    elif peliculas == 19:
+        print("Orgullo y Prejuicio:")
+        print("Una adaptación de la novela de Jane Austen, donde una joven enfrenta los desafíos del amor y la sociedad en la Inglaterra del siglo XIX. La película combina romance y drama, explorando temas de orgullo, prejuicio y matrimonio.")
+
+    elif peliculas == 20:
+        print("Siempre el Mismo Día:")
+        print("Una historia de amor que sigue a dos amigos a lo largo de 20 años, mostrando cómo sus vidas y relaciones cambian con el tiempo. La película combina romance y drama, explorando temas de amistad, amor y destino.")
+
+    elif peliculas == 21:
+        print("Duro de Matar:")
+        print("Un policía de Nueva York debe enfrentarse a un grupo de terroristas que han tomado un rascacielos durante la Navidad. La película combina acción y suspenso, explorando temas de heroísmo y valentía.")
+
+    elif peliculas == 22:
+        print("Terminator 2: El Juicio Final:")
+        print("Un cyborg del futuro es enviado para proteger a un joven que será clave en la lucha contra las máquinas. La película combina acción y ciencia ficción, explorando temas de destino y humanidad.")
+
+    elif peliculas == 23:
+        print("Misión: Imposible:")
+        print("Un equipo de espías debe evitar que un terrorista destruya una ciudad. La película combina acción y suspenso, explorando temas de lealtad y sacrificio.")
+
+    elif peliculas == 24:
+        print("Gladiador:")
+        print("Un gladiador romano se rebela contra su amo y busca venganza. La película combina acción y drama, explorando temas de honor y justicia.")
+
+    elif peliculas == 25:
+        print("Batman: El Caballero de la Noche:")
+        print("Batman enfrenta al Joker, un criminal psicópata que amenaza con destruir Gotham City. La película combina acción y drama, explorando temas de justicia, corrupción y redención.")
+        
