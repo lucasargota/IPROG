@@ -77,7 +77,20 @@ else:
 subtotal = subtotal + extra
 
 
-    continuar = input("¿Desea cargar otro pedido? (s/n): ")
+descuento = calcular_descuento(subtotal)
+
+
+total = subtotal - descuento
+
+
+print("\n----- DETALLE DEL PEDIDO -----")
+print("Tamaño:", tamaño)
+print("Cantidad:", cantidad)
+print("Subtotal: $", subtotal)
+print("Descuento: $", descuento)
+print("TOTAL: $", total)
+  
+continuar = input("¿Desea cargar otro pedido? (s/n): ")
 
     while continuar != "s" and continuar != "n":
         print("Opción incorrecta.")
