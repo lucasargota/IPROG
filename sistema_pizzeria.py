@@ -54,30 +54,43 @@ while continuar == "s":
         cantidad = int(input("Cantidad de pizzas: "))
 
 
-print("\n¿Desea agregar extra queso?")
-print("1. Sí - $1000 por pizza")
-print("2. No")
+    print("\n¿Desea agregar extra queso?")
+    print("1. Sí - $1000 por pizza")
+    print("2. No")
 
-adicional = int(input("Opción: "))
-
-while adicional < 1 or adicional > 2:
-    print("Opción incorrecta.")
     adicional = int(input("Opción: "))
 
+    while adicional < 1 or adicional > 2:
+        print("Opción incorrecta.")
+        adicional = int(input("Opción: "))
 
 
-subtotal = precio * cantidad
+    subtotal = precio * cantidad
 
 
-if adicional == 1:
-    extra = 1000 * cantidad
-else:
-    extra = 0
+    if adicional == 1:
+        extra = 1000 * cantidad
+    else:
+        extra = 0
 
-subtotal = subtotal + extra
-    
 
-continuar = input("¿Desea cargar otro pedido? (s/n): ")
+    subtotal = subtotal + extra
+
+
+    descuento = calcular_descuento(subtotal)
+
+
+    total = subtotal - descuento
+
+
+    print("\n----- DETALLE DEL PEDIDO -----")
+    print("Tamaño:", tamaño)
+    print("Cantidad:", cantidad)
+    print("Subtotal: $", subtotal)
+    print("Descuento: $", descuento)
+    print("TOTAL: $", total)
+
+    continuar = input("¿Desea cargar otro pedido? (s/n): ")
 
     while continuar != "s" and continuar != "n":
         print("Opción incorrecta.")
